@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shopping Kart</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+            <header>
+                <div id="logo">Shopping Kart</div>
+                
+                  <div class="search">
+                    <div id="search1">
+                      <input type="text" id ="searchText" placeholder="Search" ></input>
+                      <button id="searchItem">
+                        <img src="images/magnifying-glass.svg" width="25px" />
+                      </button>
+                    </div>
+                  
+                  </div>
+                    <div id="header_right">
+                      <button id="addToCart"><img src="images/shopping-cart-solid.svg" width="30px" height="30px"></button>
+                    </div>
+            </header>
+    <section class="content-area">
+        <aside>
+            <nav class="side-navigaiton">
+              <div>
+                <h2>Categories</h2>
+              <ul>
+
+                 <li><a href="#" id="mens"><img src="images/tshirt-solid.svg" />Men's Clothing</a></li>
+                 <li><a href="#" id="womens"><img src="images/female-solid.svg" />Women's Clothing</a></li>
+                 <li><a href="#" id="jewelery"><img src="images/gem-regular.svg" />Jewelery</a></li>
+                 <li><a href="#" id="electronics"><img src="images/desktop-solid.svg" />Electronics</a></li>
+
+
+               </ul>
+              </div>
+              <div id ="price_filter"><h3>Price</h3>
+                <div id="checkbox_container">
+                <input type="radio" name="price_range1" class="price_range" value="range1" />
+                <label id="vehicle1">  Rs.0 - Rs.100</label><br><br>
+                <input type="radio" name="price_range1" class="price_range" value="range2" />
+                <label id="vehicle2">  Rs.100 - Rs.500</label><br><br>
+                <input type="radio" name="price_range1" class="price_range" value="range3" />
+                <label id="vehicle3">  Rs.500 - Rs.1000</label>
+                <button id="submit">Apply</button>
+                
+              </div>
+              </div>
+            </nav>
+            
+        </aside>
+        <main>
+            <!-- <div id="main-heading">
+              <h1>Welcome to your Favorite Shopping site Shopping Kart...!</h1>
+             <form>
+                <select name="cars" id="opt_filter">
+                <option value="category" >Filter By</option>
+                <option value="category">category</option>
+                <option value="price">price</option>
+                </select> 
+              </form> 
+            </div> -->
+            <div class="result"></div>
+            <div class="details">
+                <div id="item_id"></div>
+                <div id="item_title"></div>
+                <div id="item_image"></div>
+                <div id="item_desc" style="color:blue"></div>
+                <div id="item_price"></div>
+      
+                <button id="btn_addtocart">Add to Cart</button>
+                <button id="btn_back">Back</button>
+            </div>
+            <div id="price_filter_block">
+
+
+            </div>
+            <div id="filter_category_block"><div class="details"></div></div>
+            <div id="filter_category_block1"><div class="details1"></div></div>
+            <div id="filter_category_block2"><div class="details2"></div></div>
+            <div id="filter_category_block3"><div class="details3"></div></div>
+
+              <div id="filter_price_1"></div>
+              <div id="filter_price_2"></div>
+              <div id="filter_price_3"></div>
+            
+            <div id="itemInCart">
+                <p id="check_item">  No items in Kart </p>
+                <button id="home">Home</button>
+            </div>
+            <div id="display_searchitem"></div>
+        </main>
+    </section>
+    </div>
+    
+    <footer class="side-footer">
+        &copy by shoppingKart.All rights reserved.
+    </footer>
+
+    <script src="dist/main.js"></script>
+  </body>
+</html>
